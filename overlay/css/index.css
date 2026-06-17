@@ -14,8 +14,8 @@ body {
   -webkit-user-select: none;
 }
 body.overlay {
-  margin: 0.5rem 0.25rem 0.25rem 0.25rem !important;
-  height: calc(100% - 0.25rem) !important;
+  /* margin: 0.5rem 0.25rem 0.25rem 0.25rem !important; */
+  /* height: calc(100% - 0.25rem) !important; */
 }
 /* Resize handle */
 body.overlay::after {
@@ -26,7 +26,7 @@ body.overlay::after {
   right: 0;
   bottom: 0;
 
-  width: 8px; // OverlayPlugin decide this
+   width: 8px; /* OverlayPlugin decide this */
   height: 8px;
 
   background: rgba(0, 0, 0, 0.001);

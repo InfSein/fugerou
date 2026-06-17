@@ -198,14 +198,14 @@
       "sam": "武士",
       "rpr": "Reaper",
       "rdm": "赤魔法师",
-      "vpr": "Viper",
-      "pct": "Pictomancer",
+      "vpr": "蝰蛇剑士",
+      "pct": "绘灵法师",
       "blu": "青魔法师",
       "dnc": "舞者",
       "whm": "白魔法师(幻术师)",
       "sch": "学者",
       "ast": "占星术士",
-      "sge": "Sage",
+      "sge": "贤者",
       "smn-pet": "召唤师(秘术师)宝石兽",
       "sch-pet": "学者小仙女",
       "mch-pet": "机工士炮塔",
@@ -217,17 +217,17 @@
       "significant_digit": {
         "_": "小数点精度",
         "dps": "DPS",
-        "damage": "Damage",
+        "damage": "伤害量",
         "hps": "HPS",
         "accuracy": "命中率",
         "critical": "伤害和治疗百分比"
       },
       "thousands_separator": {
-        "_": "Thousands separator",
-        "none": "None",
-        "period": "Period (.)",
-        "comma": "Comma (,)",
-        "space": "Space"
+        "_": "千位分隔符",
+        "none": "不分隔",
+        "period": "句号 (.)",
+        "comma": "逗号 (,)",
+        "space": "空格"
       },
       "myname": "自己的名字",
       "display_name": "自定义自己的名称",
@@ -239,7 +239,7 @@
       "number_abbreviation": "省略以1000为单位的数字"
     },
     "element": {
-      "narrow_nav": "*Narrower Top navigation bar"
+      "narrow_nav": "*使用更窄的顶部导航栏"
     }
   },
   "col": {

@@ -10,7 +10,7 @@ const CONFIG_DEFAULT = {
     // body
     'resize-factor': 1,
     'body-margin': '0.25rem',
-    'body-font': "'Lato', 'Source Han Sans', 'Meiryo UI', '맑은 고딕', sans-serif",
+    'body-font': "'Cambria', 'Lato', '思源宋体 CN Light', 'Source Han Sans', 'Meiryo UI', '맑은 고딕', sans-serif",
     // header / ui
     'nav-opacity': 1,
     'nav-bg': 'rgba(31, 31, 31, 0.9)',
@@ -30,7 +30,7 @@ const CONFIG_DEFAULT = {
     'shadow-card': '0 0.05rem 0.25rem rgba(0, 0, 0, 0.5)',
     'shadow-text': '0 0 0.125em rgba(0, 0, 0, 1)',
     'font-size-small': '0.75rem',
-    'gauge-height': '10%',
+    'gauge-height': '100%',
     'graph-height': '1.5rem'
   },
   tabs: [
@@ -46,11 +46,12 @@ const CONFIG_DEFAULT = {
         'deal.per_second',
         'deal.critical',
         'deal.direct',
-        'deal.crit_direct'
+        'deal.maxhit',
+        'etc.death'
       ]
     }, {
       id: 1,
-      label: 'Tank',
+      label: '承伤',
       width: 1,
       sort: 'tank.damage',
       col: [
@@ -63,7 +64,7 @@ const CONFIG_DEFAULT = {
       ]
     }, {
       id: 2,
-      label: 'Heal',
+      label: '治疗',
       width: 1,
       sort: 'heal.total',
       col: [
@@ -77,7 +78,7 @@ const CONFIG_DEFAULT = {
       ]
     }, {
       id: 3,
-      label: '24',
+      label: '24人',
       width: 3,
       sort: 'deal.total',
       col: [
@@ -134,29 +135,29 @@ const CONFIG_DEFAULT = {
   },
   color: {
     'gauge-default': '#444',
-    'gauge-opacity': '1',
-    pld: 'rgb(21, 28, 100)', // Indigo 900 (B -10%)
-    war: 'rgb(153, 23, 23)', // Red 900 (B -10%)
-    drk: 'rgb(136, 14, 79)', // Pink 900
-    gnb: 'rgb(78, 52, 46)', // Brown 800
-    mnk: 'rgb(255, 152, 0)', // Orange 500
-    drg: 'rgb(63, 81, 181)', // Indigo 500
-    brd: 'rgb(158, 157, 36)', // Lime 800
-    nin: 'rgb(211, 47, 47)', // Red 700
-    rpr: 'rgb(254, 179, 0)', // Amber 600
-    vpr: 'rgb(216, 67, 21)', // Deep Orange 800
-    smn: 'rgb(46, 125, 50)', // Green 800
-    blm: 'rgb(126, 87, 194)', // Deep Purple 400
-    mch: 'rgb(0, 151, 167)', // Cyan 700
-    rdm: 'rgb(233, 30, 99)', // Pink 500
-    blu: 'rgb(0, 185, 247)', // Light Blue 500
-    pct: 'rgb(253, 216, 53)', // Yellow 600
-    dnc: 'rgb(244, 143, 177)', // Pink 200
-    sam: 'rgb(255, 202, 40)', // Amber 400
-    whm: 'rgb(117, 117, 117)', // Gray 600
-    sch: 'rgb(121, 134, 203)', // Indigo 300
-    ast: 'rgb(121, 85, 72)', // Brown 500
-    sge: 'rgb(79, 195, 247)', // Light Blue 300
+    'gauge-opacity': '0.45',            
+    "pld": "#2D3A80",
+    "war": "#2D3A80",
+    "drk": "#2D3A80",
+    "gnb": "#2D3A80",
+    "mnk": "#732828",
+    "drg": "#732828",
+    "brd": "#732828",
+    "nin": "#732828",
+    "rpr": "#732828",
+    "vpr": "#732828",
+    "smn": "#732828",
+    "blm": "#732828",
+    "mch": "#732828",
+    "rdm": "#732828",
+    "blu": "#732828",
+    "pct": "#732828",
+    "dnc": "#732828",
+    "sam": "#732828",
+    "whm": "#346624",
+    "sch": "#346624",
+    "ast": "#346624",
+    "sge": "#346624",
     'smn-pet': 'rgba(46, 125, 50, 0.5)',
     'sch-pet': 'rgba(121, 134, 203, 0.5)',
     'mch-pet': 'rgba(0, 151, 167, 0.5)',
@@ -168,17 +169,17 @@ const CONFIG_DEFAULT = {
       dps: 0,
       damage: 0,
       hps: 0,
-      accuracy: 0,
-      critical: 0
+      accuracy: 1,
+      critical: 1
     },
     thousands_separator: '',
     merge_pet: true,
     myname: [],
     display_name: '',
     use_short_name: 0,
-    use_skill_aliases: true,
+    use_skill_aliases: false,
     use_tailing_pct: true,
-    small_lower_numbers: false,
+    small_lower_numbers: true,
     number_abbreviation: false
 
   },
