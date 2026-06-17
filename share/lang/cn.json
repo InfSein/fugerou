@@ -230,6 +230,7 @@
         "space": "Space"
       },
       "myname": "自己的名字",
+      "display_name": "自定义自己的名称",
       "use_short_name": "玩家名字表示方法（国服无效）",
       "use_skill_aliases": "使用技能名缩写",
       "numbers": "数字格式",

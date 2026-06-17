@@ -5,7 +5,7 @@ const CODENAME = 'Audite Nostalgia'
 const DESCRIPTION = 'その旋律は紡がれ受け継がれていく'
 
 const CONFIG_DEFAULT = {
-  lang: 'ko',
+  lang: 'cn',
   style: {
     // body
     'resize-factor': 1,
@@ -174,11 +174,13 @@ const CONFIG_DEFAULT = {
     thousands_separator: '',
     merge_pet: true,
     myname: [],
+    display_name: '',
     use_short_name: 0,
     use_skill_aliases: true,
     use_tailing_pct: true,
     small_lower_numbers: false,
     number_abbreviation: false
+
   },
   filter: {
     unusual_spaces: false,
@@ -352,7 +354,12 @@ const COLUMN_INDEX = {
     },
     owner: {
       v: _ => resolveClass(_.Job, _.name)[2],
-      f: _ => `<span>${_}</span>`
+      f: (_, conf) => {
+        if(isYou(_, conf.format.myname) && conf.format.display_name) {
+          _ = conf.format.display_name
+        }
+        return `<span>${_}</span>`
+      }
     },
     name: {
       v: _ => resolveClass(_.Job, _.name)[1],
@@ -360,6 +367,9 @@ const COLUMN_INDEX = {
         let name = _.split(' ')
         let flag = +conf.format.use_short_name
         let you = isYou(_, conf.format.myname)
+        if(you && conf.format.display_name) {
+          return conf.format.display_name
+        }
         if(!you && name.length >= 2) {
           if((flag & 1) && typeof name[0] === 'string') // Firstname
             name[0] = name[0][0] + '.'

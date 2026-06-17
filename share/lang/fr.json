@@ -230,6 +230,7 @@
         "space": "Espace"
       },
       "myname": "Mon nom",
+      "display_name": "Nom d'affichage",
       "use_short_name": "Apparence des noms des joueurs",
       "use_skill_aliases": "Utiliser les alias de compétences",
       "use_tailing_pct": "Afficher % après la valeur",

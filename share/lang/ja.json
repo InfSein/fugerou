@@ -230,6 +230,7 @@
         "space": "スペース ( )"
       },
       "myname": "名前",
+      "display_name": "表示名",
       "use_short_name": "名前をイニシャルで表示",
       "use_skill_aliases": "スキル名の略称を使用",
       "numbers": "数値の表示形式",

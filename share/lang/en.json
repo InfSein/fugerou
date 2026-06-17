@@ -230,6 +230,7 @@
         "space": "Space"
       },
       "myname": "My name",
+      "display_name": "Display name",
       "use_short_name": "Player Name Appearance",
       "use_skill_aliases": "Use skillname aliases",
       "numbers": "Formats",

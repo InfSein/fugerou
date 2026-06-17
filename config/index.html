@@ -239,6 +239,15 @@ document.addEventListener('DOMContentLoaded', _ => {
         <article>
           <h3 data-locale="ui.config.general.basic"> 기본 </h3>
           <p class="control">
+            <label for="input-format-display_name"
+                   data-locale="config.format.display_name">
+              표시할 내 이름
+            </label>
+            <input type="text" id="input-format-display_name"
+                   data-config-key="format.display_name"
+                   placeholder="YOU" />
+          </p>
+          <p class="control">
             <label for="input-format-use_short_name"
                    data-locale="config.format.use_short_name">
               이름을 이니셜로 표시 (글로벌 서버용)
