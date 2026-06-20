@@ -36,7 +36,7 @@ const CONFIG_DEFAULT = {
   tabs: [
     {
       id: 0,
-      label: 'DPS',
+      label: '输出',
       width: 1,
       sort: 'deal.total',
       col: [
@@ -73,8 +73,8 @@ const CONFIG_DEFAULT = {
         'heal.pct',
         'heal.per_second',
         'heal.total',
-        'heal.over',
-        'heal.swing'
+        'heal.swing',
+        'heal.over'
       ]
     }, {
       id: 3,
@@ -85,7 +85,7 @@ const CONFIG_DEFAULT = {
         'i.icon',
         'i.name',
         'deal.per_second',
-        'deal.swing'
+        'etc.death'
       ]
     }
   ],
