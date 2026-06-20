@@ -1,6 +1,6 @@
 # fugerou
 
-自用魔改版 [Kagerou](https://github.com/hibiyasleep/kagerou)。
+自用魔改版 [Kagerou](https://github.com/hibiyasleep/kagerou) 。
 
 ## 特色功能
 
@@ -10,11 +10,11 @@
 
 ### 易用性优化
 * 增加设置项“自定义自己的名称”
-* UI缩放最大值从2倍提升至3倍
+* 设置项UI缩放的最大值从2倍提升至3倍
 
 ### 修复
 * 修复设置了缩放的场合，设置页面元素会变得过于巨大的问题
-* 修复一些大小/边距细节问题
+* 修复将悬浮窗对齐多屏幕的边缘位置时，悬浮窗位置会在调整后跳动的问题
 
 ## 使用方法
 
@@ -23,4 +23,4 @@
 
 ## 许可·声明
 
-- Kagerou 的版权归原作者所有，此仓库继承同样的 LICENSE 。
+- 本项目基于 [hibiyasleep/Kagerou](https://github.com/hibiyasleep/kagerou) 修改，并遵照其开源协议继承同样的 GPL LICENSE 。

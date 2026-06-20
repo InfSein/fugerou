@@ -224,7 +224,7 @@
 
         window.open(
           '../config/index.html',
-          'kagerou - Settings',
+          'fugerou - Settings',
           `width=${800 * resize},height=${600 * resize}`
         )
       }
