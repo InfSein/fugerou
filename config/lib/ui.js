@@ -101,7 +101,7 @@ const sendMessage = function sendMessage (message) {
       } else if(type === 'integer') {
         _.value = +value
       } else {
-        _.value = ((value || '') + '').replace(new RegExp(unit, 'g'), '')
+        _.value = ((value ?? '') + '').replace(new RegExp(unit, 'g'), '')
       }
 
       // placeholder glitch workaround
