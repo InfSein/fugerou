@@ -1,8 +1,8 @@
 'use strict'
 
-const VERSION = '0.8.15'
-const CODENAME = 'Audite Nostalgia'
-const DESCRIPTION = 'その旋律は紡がれ受け継がれていく'
+const VERSION = '1.0.0'
+const CODENAME = '天际的行路'
+const DESCRIPTION = '世界を渡りし　黄金の英雄'
 
 const CONFIG_DEFAULT = {
   lang: 'cn',
