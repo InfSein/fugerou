@@ -11,6 +11,8 @@
 ### 易用性优化
 * 增加设置项“自定义自己的名称”
 * 设置项UI缩放的最大值从2倍提升至3倍
+* 优化职业默认配色，采用职能颜色
+  ![Overlay Preview 1](https://infsein.github.io/static/fugerou/readme/overlay_screenshot_1.jpg)
 
 ### 修复
 * 修复设置了缩放的场合，设置页面元素会变得过于巨大的问题
